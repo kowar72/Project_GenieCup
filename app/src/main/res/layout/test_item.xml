@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/circleImg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:scaleType="centerInside"
+        tools:visibility="invisible" />
+
+    <com.example.projectaricup.CircleView
+        android:id="@+id/circleView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@android:color/transparent"
+        android:fillColor="#bf211d"
+        app:strokeColor="@color/warm_grey"
+
+        app:strokewidth="0" />
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Genie Cup</string>
+    <string name="report">보고서</string>
+    <string name="graph">혈량 그래프</string>
+    <string name="channel0">channel0</string>
+    <string name="chanel0description">Channel for cycle alarm</string>
+</resources>

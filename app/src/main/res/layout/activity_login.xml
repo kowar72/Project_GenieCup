@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:fontFamily="@font/godom"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColor="#7f7f7f"
+        android:textSize="14sp"
+        android:backgroundTint="#bf211d"
+        app:layout_constraintBottom_toTopOf="@+id/keep_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:fontFamily="@font/godom"
+        android:hint="이메일 (아이디)"
+        android:inputType="textPersonName"
+        android:textColor="#7f7f7f"
+        android:textSize="14sp"
+        android:backgroundTint="#bf211d"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/genie_cup_login" />
+
+    <ImageView
+        android:id="@+id/non_signup_btn"
+        android:layout_width="129dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sep_bar"
+        app:srcCompat="@drawable/non__signup_start" />
+
+    <ImageView
+        android:id="@+id/find_idpw_btn"
+        android:layout_width="80dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/non_signup_btn"
+        app:layout_constraintEnd_toStartOf="@+id/sep_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn"
+        app:srcCompat="@drawable/find_id_pw" />
+
+    <ImageView
+        android:id="@+id/sep_bar"
+        android:layout_width="1.5dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/non_signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn"
+        app:srcCompat="@drawable/sep_bar_login" />
+
+    <ImageView
+        android:id="@+id/signup_btn"
+        android:layout_width="57dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/non_signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sep_bar"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn"
+        app:srcCompat="@drawable/signup_btn" />
+
+    <ToggleButton
+        android:id="@+id/keep_login"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/godom"
+        android:text="ToggleButton"
+        android:textColor="#7f7f7f"
+        android:textOff="로그인 상태 유지"
+        android:textOn="로그인 상태 유지"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:theme="@style/ToggleButton.CustomTheme"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/login_btn_back"
+        android:lineSpacingExtra="3.5sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sep_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keep_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

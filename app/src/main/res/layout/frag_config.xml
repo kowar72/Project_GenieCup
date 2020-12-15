@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="23.5dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/configviewlabel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50.7dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/godom"
+        android:lineSpacingExtra="3sp"
+        android:text="설정"
+        android:textColor="@color/warm_grey"
+        android:textSize="18.5sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="86dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/account_back"
+            android:layout_width="match_parent"
+            android:layout_height="118.4dp"
+            android:background="@drawable/config_account_status">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/config_nonmember"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="105dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/loginadvertisetext" />
+
+                <ImageButton
+                    android:id="@+id/config_login_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="166dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="166dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                    app:srcCompat="@drawable/config_login" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/config_member"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="35.9dp"
+                    android:layout_height="30.9dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/config_account_pic" />
+
+                <TextView
+                    android:id="@+id/account_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="33dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="일반회원"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/product_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="33dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="사용제품"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/account_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/account_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="33dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="최이진님"
+                    android:textAlignment="center"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/account_label"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="33dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="기기없음"
+                    android:textAlignment="center"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/product_label"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42.5dp" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="36dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="데이터 백업"
+
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/data_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="true"
+                android:layout_marginEnd="39dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="36dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="아이를 가졌어요"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/havechild_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="39dp"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="36dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="생리 예정일 알림"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/cyclealarmrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="-3일전"
+                android:textColor="#9c9c9c"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <Switch
+                android:id="@+id/cyclealarm_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="39dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="36dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="배란일 알림"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ovulationalarmrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="-3일전"
+                android:textColor="#9c9c9c"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <Switch
+                android:id="@+id/ovulationalarm_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="39dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/logoutbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="36dp"
+                android:fontFamily="@font/godom"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5sp"
+                android:text="로그아웃"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_report"
+        android:icon="@drawable/menu_report_off"
+        android:title=""
+        />
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@drawable/menu_main_on"
+        android:title=""
+        />
+    <item
+        android:id="@+id/menu_config"
+        android:icon="@drawable/menu_setting_off"
+        android:title=""
+        />
+</menu>

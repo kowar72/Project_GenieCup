@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleView">
+    <attr name="android:fillColor" format="color"/>
+    <attr name="strokeColor" format="color"/>
+    <attr name="strokewidth" format="float"/>
+    <attr name="value" format="integer"/>
+    </declare-styleable>
+</resources>

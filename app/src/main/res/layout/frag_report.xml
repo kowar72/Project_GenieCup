@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/red_line_1"
+                    android:layout_width="35dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="126dp"
+                    android:layout_marginRight="80dp"
+                    app:srcCompat="@drawable/red_line" />
+
+                <ImageView
+                    android:id="@+id/red_dot1"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginEnd="95dp"
+                    app:srcCompat="@drawable/red_dot" />
+
+                <ImageView
+                    android:id="@+id/red_line_2"
+                    android:layout_width="35dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="190dp"
+                    app:srcCompat="@drawable/red_line" />
+
+                <ImageView
+                    android:id="@+id/red_dot_2"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="187dp"
+                    app:srcCompat="@drawable/red_dot" />
+
+                <ImageView
+                    android:id="@+id/rotate_render"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="87dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/report_render" />
+
+                <TextView
+                    android:id="@+id/cycle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="114dp"
+                    android:layout_marginEnd="130dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="0sp"
+                    android:text="평균주기\n28일"
+                    android:textAlignment="center"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/predict_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginTop="180dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="0sp"
+                    android:text="생리 예정일\n26일 후"
+                    android:textAlignment="center"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/present_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="140dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="1.5sp"
+                    android:text="생리 시작\n2일"
+                    android:textAlignment="center"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="17sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="23dp"
+                    app:srcCompat="@drawable/menu_report_on" />
+
+                <TextView
+                    android:id="@+id/report_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/godom"
+                    android:lineSpacingExtra="1.5sp"
+                    android:text="@string/report"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="19.5sp"
+                    android:textStyle="normal" />
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="12dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="57dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/graph_label_img" />
+
+                <TextView
+                    android:id="@+id/graph_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="57dp"
+                    android:fontFamily="@font/godom"
+                    android:gravity="center_horizontal|center"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/graph"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="12.5sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bloodgraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="70dp"
+                    android:scrollbars="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="45dp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="0"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="8sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/bloodgraph" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="50"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="8sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintLeft_toRightOf="@id/bloodgraph"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3.5sp"
+                    android:text="100"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="8sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toRightOf="@id/bloodgraph"
+                    app:layout_constraintTop_toTopOf="@id/bloodgraph" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/report_display"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="41dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginEnd="41dp"
+                    android:background="@drawable/report_back"
+                    android:fontFamily="@font/godom"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3.5sp"
+                    android:paddingLeft="15dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlCompat" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/geniecup_img" />
+
+                <Button
+                    android:id="@+id/gotostore"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginTop="115dp"
+                    android:layout_marginEnd="39dp"
+                    android:background="@drawable/login_btn_back"
+                    android:fontFamily="@font/godom"
+
+                    android:lineSpacingExtra="5sp"
+                    android:text="지니컵 구매하기"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
